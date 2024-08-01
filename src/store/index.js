@@ -8,13 +8,13 @@ export function createStore() {
           id: 100,
           name: 'Continue',
           description: 'The HTTP 100 Continue informational status response code indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished. To have a server check the request\'s headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body.',
-          img: '/src/assets/img/squirrel-100.jpg'
+          img: '/../assets/img/squirrel-100.jpg'
         },
         {
           id: 101,
           name: 'Switching Protocols',
           description: 'The HTTP 101 Switching Protocols response code indicates a protocol to which the server switches. The protocol is specified in the Upgrade request header received from a client. The server includes in this response an Upgrade response header to indicate the protocol it switched to. The process is described in the following article: Protocol upgrade mechanism',
-          img: '/src/assets/img/squirrel-101.jpg'
+          img: '/../assets/img/squirrel-101.jpg'
         },
         {
           id: 102,
