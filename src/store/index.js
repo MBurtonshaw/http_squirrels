@@ -348,110 +348,110 @@ export function createStore() {
         },
         {
           id: 499,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Client Closed Request',
+          description: 'HTTP response status code 499 is an unofficial HTTP status code that is specific to both ArcGIS with 499 Token Required and nginx with 499 Client Closed Request.',
           img: '/img/squirrel-499.jpg'
         },
         {
           id: 500,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Internal Server Error',
+          description: 'The HTTP 500 Internal Server Error server error response code indicates that the server encountered an unexpected condition that prevented it from fulfilling the request. This error response is a generic "catch-all" response. Usually, this indicates the server cannot find a better 5xx error code to response. Sometimes, server administrators log error responses like the 500 status code with more details about the request to prevent the error from happening again in the future.',
           img: '/img/squirrel-500.jpg'
         },
         {
           id: 501,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Not Implemented',
+          description: 'The HTTP 501 Not Implemented server error response code means that the server does not support the functionality required to fulfill the request. This status can also send a Retry-After header, telling the requester when to check back to see if the functionality is supported by then. 501 is the appropriate response when the server does not recognize the request method and is incapable of supporting it for any resource. The only methods that servers are required to support (and therefore that must not return 501) are GET and HEAD. If the server does recognize the method, but intentionally does not support it, the appropriate response is 405 Method Not Allowed.',
           img: '/img/squirrel-501.jpg'
         },
         {
           id: 502,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Bad Gateway',
+          description: 'The HTTP 502 Bad Gateway server error response code indicates that the server, while acting as a gateway or proxy, received an invalid response from the upstream server.',
           img: '/img/squirrel-502.jpg'
         },
         {
           id: 503,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Service Unavailable',
+          description: 'The HTTP 503 Service Unavailable server error response code indicates that the server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. This response should be used for temporary conditions and the Retry-After HTTP header should, if possible, contain the estimated time for the recovery of the service. Caching-related headers that are sent along with this response should be taken care of, as a 503 status is often a temporary condition and responses shouldn\'t usually be cached.',
           img: '/img/squirrel-503.jpg'
         },
         {
           id: 504,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Gateway Timeout',
+          description: 'The HTTP 504 Gateway Timeout server error response code indicates that the server, while acting as a gateway or proxy, did not get a response in time from the upstream server that it needed in order to complete the request.',
           img: '/img/squirrel-504.jpg'
         },
         {
           id: 506,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Variant Also Negotiates',
+          description: 'The HTTP 506 Variant Also Negotiates response status code may be given in the context of Transparent Content Negotiation (see RFC 2295). This protocol enables a client to retrieve the best variant of a given resource, where the server supports multiple variants. The Variant Also Negotiates status code indicates an internal server configuration error in which the chosen variant is itself configured to engage in content negotiation, so is not a proper negotiation endpoint.',
           img: '/img/squirrel-506.jpg'
         },
         {
           id: 507,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Insufficient Storage',
+          description: 'The HTTP 507 Insufficient Storage response status code may be given in the context of the WebDAV protocol (see RFC 4918). It indicates that a method could not be performed because the server cannot store the representation needed to successfully complete the request.',
           img: '/img/squirrel-507.jpg'
         },
         {
           id: 508,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Loop Detected',
+          description: 'The HTTP 508 Loop Detected response status code may be given in the context of the WebDAV protocol. It indicates that the server terminated an operation because it encountered an infinite loop while processing a request with "Depth: infinity". This status indicates that the entire operation failed.',
           img: '/img/squirrel-508.jpg'
         },
         {
           id: 509,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Bandwidth Limit Exceeded',
+          description: 'HTTP response status code 509 Bandwidth Limit Exceeded is an unofficial HTTP status code that is specific to Apache Web Server and cPanel that indicates that the web hosting client has exceeded the bandwidth allotment on the server-side. When the 509 Bandwidth Limit Exceeded status code is received, it means first that the web hosting client is using a connection or hosting method where the bandwidth is limited.',
           img: '/img/squirrel-509.jpg'
         },
         {
           id: 510,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Not Extended',
+          description: 'The HTTP 510 Not Extended response status code is sent in the context of the HTTP Extension Framework, defined in RFC 2774. In that specification a client may send a request that contains an extension declaration, that describes the extension to be used. If the server receives such a request, but any described extensions are not supported for the request, then the server responds with the 510 status code.',
           img: '/img/squirrel-510.jpg'
         },
         {
           id: 511,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Network Authentication Required',
+          description: 'The HTTP 511 Network Authentication Required response status code indicates that the client needs to authenticate to gain network access. This status is not generated by origin servers, but by intercepting proxies that control access to the network. Network operators sometimes require some authentication, acceptance of terms, or other user interaction before granting access (for example in an internet café or at an airport). They often identify clients who have not done so using their Media Access Control (MAC) addresses.',
           img: '/img/squirrel-511.jpg'
         },
         {
           id: 521,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Web Server is Down',
+          description: 'The HTTP response status code 521 Web Server Is Down is an unofficial HTTP status code specific to Cloudflare. This error occurs when the origin web server refuses connections from Cloudflare.',
           img: '/img/squirrel-521.jpg'
         },
         {
           id: 522,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Connection Timed Out',
+          description: 'The HTTP response status code 522 is an unofficial HTTP status code specific to Cloudflare.',
           img: '/img/squirrel-522.jpg'
         },
         {
           id: 523,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Origin is Unreachable',
+          description: 'The HTTP response status code 523 Origin Is Unreachable is an unofficial HTTP status code specific to Cloudflare. The 523 error occurs when Cloudflare cannot contact your origin web server. This typically occurs when a network device between Cloudflare and the origin web server doesn\’t have a route to the origin\’s IP address.',
           img: '/img/squirrel-523.jpg'
         },
         {
           id: 525,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'SSL Handshake Failed',
+          description: 'The HTTP response status code 525 SSL Handshake Failed is an unofficial HTTP status code specific to Cloudflare.',
           img: '/img/squirrel-525.jpg'
         },
         {
           id: 530,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Site Frozen',
+          description: 'The HTTP response status code 530 Site Frozen is an unofficial HTTP status code that is specific to Cloudflare and Pantheon.',
           img: '/img/squirrel-530.jpg'
         },
         {
           id: 599,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+          name: 'Network Connect Timeout Error',
+          description: 'The HTTP response status code 599 Network Connect Timeout Error is an unofficial HTTP status code used by some proxies to signal a network connect timeout behind the proxy to a client in front of the proxy.',
           img: '/img/squirrel-599.jpg'
         }
       ],
