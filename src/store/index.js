@@ -8,49 +8,49 @@ export function createStore() {
           id: 100,
           name: 'Continue',
           description: 'The HTTP 100 Continue informational status response code indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished. To have a server check the request\'s headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body.',
-          img: '/public/img/squirrel-100.jpg'
+          img: '/src/assets/img/squirrel-100.jpg'
         },
         {
           id: 101,
           name: 'Switching Protocols',
           description: 'The HTTP 101 Switching Protocols response code indicates a protocol to which the server switches. The protocol is specified in the Upgrade request header received from a client. The server includes in this response an Upgrade response header to indicate the protocol it switched to. The process is described in the following article: Protocol upgrade mechanism',
-          img: '/public/img/squirrel-101.jpg'
+          img: '/src/assets/img/squirrel-101.jpg'
         },
         {
           id: 102,
           name: 'Processing',
           description: 'The HTTP 102 Processing informational status response code indicates to client that a full request has been received and the server is working on it. This status code is only sent if the server expects the request to take significant time. It tells the client that your request is not dead yet.',
-          img: '/public/img/squirrel-102.jpg'
+          img: '/src/assets/img/squirrel-102.jpg'
         },
         {
           id: 103,
           name: 'Early Hints',
           description: 'The HTTP 103 Early Hints information response may be sent by a server while it is still preparing a response, with hints about the resources that the server is expecting the final response will link. This allows a browser to start preloading resources even before the server has prepared and sent that final response. The early hint response is primarily intended for use with the Link header, which indicates the resources to be loaded. It may also contain a Content-Security-Policy header that is enforced while processing the early hint. A server might send multiple 103 responses, for example, following a redirect. Browsers only process the first early hint response, and this response must be discarded if the request results in a cross-origin redirect. Preloaded resources from the early hint are effectively pre-pended to the Document\'s head element, and then followed by the resources loaded in the final response.',
-          img: '/public/img/squirrel-103.jpg'
+          img: '/src/assets/img/squirrel-103.jpg'
         },
         {
           id: 200,
           name: 'OK',
           description: 'The HTTP 200 OK success status response code indicates that the request has succeeded. A 200 response is cacheable by default. The successful result of a PUT or a DELETE is often not a 200 OK but a 204 No Content (or a 201 Created when the resource is uploaded for the first time).',
-          img: '/public/img/squirrel-200.jpg'
+          img: '/src/assets/img/squirrel-200.jpg'
         },
         {
           id: 201,
           name: 'Created',
           description: 'The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource. The new resource, or a description and link to the new resource, is effectively created before the response is sent back and the newly created items are returned in the body of the message, located at either the URL of the request, or at the URL in the value of the Location header. The common use case of this status code is as the result of a POST request.',
-          img: '/public/img/squirrel-201.jpg'
+          img: '/src/assets/img/squirrel-201.jpg'
         },
         {
           id: 202,
           name: 'Accepted',
           description: 'The HTTP 202 Accepted response status code indicates that the request has been accepted for processing, but the processing has not been completed; in fact, processing may not have started yet. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. 202 is non-committal, meaning that there is no way for the HTTP to later send an asynchronous response indicating the outcome of processing the request. It is intended for cases where another process or server handles the request, or for batch processing.',
-          img: '/public/img/squirrel-202.jpg'
+          img: '/src/assets/img/squirrel-202.jpg'
         },
         {
           id: 203,
           name: 'Non-Authoritative Information',
           description: 'The HTTP 203 Non-Authoritative Information response status indicates that the request was successful but the enclosed payload has been modified by a transforming proxy from that of the origin server\'s 200 OK response. The 203 response is similar to the value 214, meaning Transformation Applied, of the Warning header code, which has the additional advantage of being applicable to responses with any status code.',
-          img: '/public/img/squirrel-203.jpg'
+          img: '/src/assets/img/squirrel-203.jpg'
         },
         {
           id: 204,
@@ -255,205 +255,206 @@ export function createStore() {
           name: 'I\'m a Teapot',
           description: 'The HTTP 418 I\'m a teapot client error response code indicates that the server refuses to brew coffee because it is, permanently, a teapot. A combined coffee/tea pot that is temporarily out of coffee should instead return 503. This error is a reference to Hyper Text Coffee Pot Control Protocol defined in April Fools\' jokes in 1998 and 2014. Some websites use this response for requests they do not wish to handle, such as automated queries.',
           img: '/src/assets/img/squirrel-418.jpg'
-        },
-        {
-          id: 420,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-420.jpg'
-        },
-        {
-          id: 421,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-421.jpg'
-        },
-        {
-          id: 422,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-422.jpg'
-        },
-        {
-          id: 423,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-423.jpg'
-        },
-        {
-          id: 424,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-424.jpg'
-        },
-        {
-          id: 425,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-425.jpg'
-        },
-        {
-          id: 426,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-426.jpg'
-        },
-        {
-          id: 428,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-428.jpg'
-        },
-        {
-          id: 429,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-429.jpg'
-        },
-        {
-          id: 431,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-431.jpg'
-        },
-        {
-          id: 444,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-444.jpg'
-        },
-        {
-          id: 450,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-450.jpg'
-        },
-        {
-          id: 451,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-451.jpg'
-        },
-        {
-          id: 497,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-497.jpg'
-        },
-        {
-          id: 498,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-498.jpg'
-        },
-        {
-          id: 499,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-499.jpg'
-        },
-        {
-          id: 500,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-500.jpg'
-        },
-        {
-          id: 501,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-501.jpg'
-        },
-        {
-          id: 502,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-502.jpg'
-        },
-        {
-          id: 503,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-503.jpg'
-        },
-        {
-          id: 504,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-504.jpg'
-        },
-        {
-          id: 506,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-506.jpg'
-        },
-        {
-          id: 507,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-507.jpg'
-        },
-        {
-          id: 508,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-508.jpg'
-        },
-        {
-          id: 509,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-509.jpg'
-        },
-        {
-          id: 510,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-510.jpg'
-        },
-        {
-          id: 511,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-511.jpg'
-        },
-        {
-          id: 521,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-521.jpg'
-        },
-        {
-          id: 522,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-522.jpg'
-        },
-        {
-          id: 523,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-523.jpg'
-        },
-        {
-          id: 525,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-525.jpg'
-        },
-        {
-          id: 530,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-530.jpg'
-        },
-        {
-          id: 599,
-          name: 'Use Proxy',
-          description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
-          img: '/src/assets/img/squirrel-599.jpg'
-        }
+         }
+         //,
+        // {
+        //   id: 420,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-420.jpg'
+        // },
+        // {
+        //   id: 421,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-421.jpg'
+        // },
+        // {
+        //   id: 422,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-422.jpg'
+        // },
+        // {
+        //   id: 423,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-423.jpg'
+        // },
+        // {
+        //   id: 424,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-424.jpg'
+        // },
+        // {
+        //   id: 425,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-425.jpg'
+        // },
+        // {
+        //   id: 426,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-426.jpg'
+        // },
+        // {
+        //   id: 428,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-428.jpg'
+        // },
+        // {
+        //   id: 429,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-429.jpg'
+        // },
+        // {
+        //   id: 431,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-431.jpg'
+        // },
+        // {
+        //   id: 444,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-444.jpg'
+        // },
+        // {
+        //   id: 450,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-450.jpg'
+        // },
+        // {
+        //   id: 451,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-451.jpg'
+        // },
+        // {
+        //   id: 497,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-497.jpg'
+        // },
+        // {
+        //   id: 498,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-498.jpg'
+        // },
+        // {
+        //   id: 499,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-499.jpg'
+        // },
+        // {
+        //   id: 500,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-500.jpg'
+        // },
+        // {
+        //   id: 501,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-501.jpg'
+        // },
+        // {
+        //   id: 502,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-502.jpg'
+        // },
+        // {
+        //   id: 503,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-503.jpg'
+        // },
+        // {
+        //   id: 504,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-504.jpg'
+        // },
+        // {
+        //   id: 506,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-506.jpg'
+        // },
+        // {
+        //   id: 507,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-507.jpg'
+        // },
+        // {
+        //   id: 508,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-508.jpg'
+        // },
+        // {
+        //   id: 509,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-509.jpg'
+        // },
+        // {
+        //   id: 510,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-510.jpg'
+        // },
+        // {
+        //   id: 511,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-511.jpg'
+        // },
+        // {
+        //   id: 521,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-521.jpg'
+        // },
+        // {
+        //   id: 522,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-522.jpg'
+        // },
+        // {
+        //   id: 523,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-523.jpg'
+        // },
+        // {
+        //   id: 525,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-525.jpg'
+        // },
+        // {
+        //   id: 530,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-530.jpg'
+        // },
+        // {
+        //   id: 599,
+        //   name: 'Use Proxy',
+        //   description: 'HTTP response status code 305 Use Proxy is a deprecated HTTP status code returned by an origin server to indicate that the requested resource can only be accessed through a proxy server. The 305 Use Proxy status code is used to inform the client that the requested resource must be obtained through a proxy server and includes that proxy address in the Set-Proxy HTTP header or in the Location HTTP header.',
+        //   img: '/src/assets/img/squirrel-599.jpg'
+        // }
       ],
 
   },
