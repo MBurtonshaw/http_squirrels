@@ -8,7 +8,7 @@
   <h1>Squirrels</h1>
   <div id='squirrel_cards' class="row justify-content-evenly">
     
-      <div class="col py-2 http_card" v-for="squirrel in $store.state.squirrels" v-bind:key="squirrel.id">
+      <div class="squirrel col py-2" v-for="squirrel in $store.state.squirrels" v-bind:key="squirrel.id">
         <router-link class='router_link' :to="'/' + squirrel.id">
         <div class="squirrel_card bg-danger text-white">
           <img class="pic_width" v-bind:src="squirrel.img" />
