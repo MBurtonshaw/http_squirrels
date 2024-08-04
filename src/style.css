@@ -39,15 +39,29 @@
 @keyframes enter-animation {
   0% {
     transform: translateY(100px);
-    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
 .http_card {
   animation-name: enter-animation;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
+}
+
+@media screen and (max-width: 500px) {
+
+  .squirrel_card {
+    margin: auto;
+  }
+  .bg-body-secondary {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
 }
