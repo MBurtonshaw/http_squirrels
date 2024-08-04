@@ -10,13 +10,13 @@ export default {
       <div class="py-2 text-center">
         <router-link to="/">Back</router-link>
       </div>
-      <h1 class="text-center w-100 p-2 m-auto">{{ squirrel.id }} {{ squirrel.name }}</h1>
+      <h1 class="text-center w-100 p-3 m-auto">{{ squirrel.id }} {{ squirrel.name }}</h1>
       <div class="p-1 md-p-5 bg-dark">
         <a v-bind:href="squirrel.img">
           <img class="w-100" v-bind:src="squirrel.img" />
         </a>
       </div>
-      <h2 class="mt-3 py-2">Description</h2>
+      <h2 class="mt-4 pt-2">Description</h2>
       <div class="py-2">
         <p>
           {{ squirrel.description }}
@@ -36,7 +36,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   #main_detail {
-    width: 80%;
+    width: 90%;
   }
 }
 </style>
