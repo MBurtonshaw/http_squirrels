@@ -35,3 +35,19 @@
 .pic_width {
   width: 100%;
 }
+
+@keyframes enter-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.http_card {
+  animation-name: enter-animation;
+  animation-duration: 1s;
+}
