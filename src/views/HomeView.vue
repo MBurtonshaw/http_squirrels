@@ -25,5 +25,11 @@ export default {
     #main_container {
         padding: 1em;
     }
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
 }
 </style>

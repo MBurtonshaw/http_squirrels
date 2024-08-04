@@ -45,9 +45,11 @@ export default {
   .squirrel {
     padding: 1em;
   }
+
   p {
     text-align: center;
   }
+
   .squirrel_card {
     margin: auto;
   }
