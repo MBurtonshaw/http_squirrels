@@ -13,7 +13,7 @@
 }
 
 .squirrel_card {
-  width: 315px;
+  min-width: 300px;
   border-radius: 2%;
 }
 

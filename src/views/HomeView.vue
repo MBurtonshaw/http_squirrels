@@ -20,5 +20,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+@media screen and (max-width: 500px) {
+    #main_container {
+        padding: 1em;
+    }
+}
 </style>

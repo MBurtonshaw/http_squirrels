@@ -42,6 +42,9 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
+  .squirrel {
+    padding: 1em;
+  }
   p {
     text-align: center;
   }

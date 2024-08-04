@@ -30,13 +30,11 @@ export default {
 </template>
 
 <style scoped>
-#main_detail {
-  width: 50%;
-}
 
 @media screen and (max-width: 500px) {
   #main_detail {
-    width: 90%;
+    width: 100%;
+    padding: 0.5em;
   }
 }
 </style>
