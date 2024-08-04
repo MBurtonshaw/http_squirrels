@@ -5,6 +5,7 @@ let isScrolling; // Track scrolling state
 $(window).scroll(function() {
     let currentScrollTop = $(this).scrollTop();
     let windowHeight = $(window).height();
+    let screenWidth = $(window).width(); // Get the current screen width
 
     // Clear any previous timeout
     clearTimeout(isScrolling);
@@ -16,8 +17,11 @@ $(window).scroll(function() {
 
         // Loop through each squirrel
         for (let i = 0; i < squirrels.length; i++) {
-            // Skip the first three squirrels
-            if (i > 2) {
+            // Determine if we should exclude the squirrel based on screen width
+            let excludeSquirrel = screenWidth < 500 ? (i === 0) : (i < 3);
+
+            // Check if the squirrel should be excluded from fading in
+            if (!excludeSquirrel) {
                 // Check if the element is near the bottom of the viewport
                 let top_of_element = $(squirrels[i]).offset().top;
                 let bottom_of_element = top_of_element + $(squirrels[i]).outerHeight();

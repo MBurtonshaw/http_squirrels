@@ -16,21 +16,22 @@ export default {
       </div>
       <h2 class="mt-3 py-2">Description</h2>
       <div class="py-2">
-      <p>
-        {{ squirrel.description }}
-      </p>
+        <p>
+          {{ squirrel.description }}
+        </p>
       </div>
     </div>
     <div class="pb-4 text-center">
-        <router-link to="/">Back</router-link>
-      </div>
+      <router-link to="/">Back</router-link>
+    </div>
   </div>
 </template>
 
 <style scoped>
-  #main_detail {
-    width: 50%;
-  }
+#main_detail {
+  width: 50%;
+}
+
 @media screen and (max-width: 500px) {
   #main_detail {
     width: 80%;

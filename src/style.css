@@ -40,6 +40,7 @@
   0% {
     transform: translateY(100px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -55,12 +56,15 @@
   .squirrel_card {
     margin: auto;
   }
+
   .bg-body-secondary {
     text-align: center;
   }
+
   h1 {
     text-align: center;
   }
+
   h3 {
     text-align: center;
   }
