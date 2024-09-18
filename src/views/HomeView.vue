@@ -9,7 +9,7 @@
         </div>
         <card-list/>
         <div class="text-center m-3 pb-2">
-            <a target="_blank" href="https://verdant-cranachan-f205b0.netlify.app/">
+            <a target="_blank" href="https://matthew-burtonshaw.netlify.app/">
                 <span>by Matthew Burtonshaw</span>
             </a>
         </div>
